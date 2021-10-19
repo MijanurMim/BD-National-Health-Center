@@ -67,6 +67,9 @@ const Register = () => {
     >
       <Grid item sx={{ my: "30px" }}>
         <form onSubmit={handleSubmit(onSubmit)} className={classes.formMain}>
+          <Typography variant="h3" color="primary" sx={{ my: "30px" }}>
+            Register
+          </Typography>
           <Grid item xs={12}>
             {error ? (
               <Alert severity="error">{error}</Alert>
