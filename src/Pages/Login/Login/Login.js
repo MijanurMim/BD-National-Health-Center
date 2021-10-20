@@ -51,6 +51,7 @@ const Login = () => {
     const { email, password } = e;
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
+        history.push(redirect_uri);
         const user = result.user;
         console.log(user);
         setError("");

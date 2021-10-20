@@ -1,13 +1,13 @@
 import React from "react";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 
-const ServiceDetails = () => {
+const ServiceDetails = ({ data }) => {
   const { serviceId } = useParams();
+  console.log(data);
 
   return (
     <div>
-      <h1>This is Service Details : {serviceId}</h1>
-      <h4>{serviceId.name}</h4>
+      <h1> Service Details : {serviceId}</h1>
     </div>
   );
 };
