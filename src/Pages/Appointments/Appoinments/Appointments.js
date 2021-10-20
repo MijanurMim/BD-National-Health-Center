@@ -27,8 +27,7 @@ const Appointments = () => {
             Our Specialist Doctors
           </Typography>
           <Typography variant="h6" color="primary">
-            We Have The Best Doctors Who are The Best Doctors Available in Our
-            Country
+            We Have The Best Doctors Who are The Best in Our Country
           </Typography>
         </Grid>
         <Grid item container xs={12} spacing={4}>

@@ -26,11 +26,11 @@ const Events = () => {
   return (
     <Grid container className={classes.card} sx={{ my: "100px" }}>
       <Grid item xs={12} md={12}>
-        <Typography variant="h4" color="primary">
+        <Typography variant="h3" color="primary">
           Upcoming Events
         </Typography>
         <Typography variant="h6" color="primary">
-          We Have Celebrate All the Health Related Days and Events
+          We Celebrate All the World Health Related Days and Events
         </Typography>
       </Grid>
 
@@ -58,7 +58,7 @@ const Events = () => {
               <CardMedia
                 component="img"
                 height="400px"
-                image="https://image.freepik.com/free-vector/flat-world-health-day-illustration_23-2148876394.jpg"
+                image="https://image.freepik.com/free-vector/realistic-world-health-day-illustration_23-2148879721.jpg"
                 alt="green iguana"
               />
               <CardContent>
@@ -114,6 +114,32 @@ const Events = () => {
               </CardContent>
             </CardActionArea>
             <CardActions className={classes.cardButton}></CardActions>
+
+            <Card className={classes.card}>
+              <CardHeader
+                avatar={
+                  <Avatar
+                    aria-label="recipe"
+                    src="https://image.freepik.com/free-vector/doctor-character-background_1270-84.jpg"
+                  ></Avatar>
+                }
+              />
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="400px"
+                  image="https://image.freepik.com/free-vector/realistic-world-health-day-illustration_23-2148879721.jpg"
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                  ></Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions className={classes.cardButton}></CardActions>
+            </Card>
           </Card>
         </Grid>
       </Grid>

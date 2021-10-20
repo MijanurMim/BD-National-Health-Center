@@ -28,11 +28,11 @@ const Header = () => {
   const { user, logOut } = useAuth();
   const classes = useStyles();
   return (
-    <Grid>
+    <Grid container>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
           <Toolbar>
-            <Grid container>
+            <Grid container sx={{ py: "10px" }}>
               {/* Appbar Name and logo  */}
               <Grid item xs={12} md={2}>
                 <Typography variant="h4">
@@ -102,7 +102,7 @@ const Header = () => {
                 ) : (
                   <Link to="/login">
                     <Button variant="contained" sx={{ mx: 2 }}>
-                      <LoginIcon />
+                      <LoginIcon></LoginIcon>
                     </Button>
                   </Link>
                 )}

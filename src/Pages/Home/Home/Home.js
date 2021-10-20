@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
+import Events from "../../Events/Events";
 import Banner from "../Banner/Banner";
 import HomeServices from "../HomeServices/HomeServices";
 
@@ -21,11 +22,13 @@ const Home = () => {
 
       {/* home service area  */}
 
-      <Grid container justifyContent="center">
+      <Grid container justifyContent="center" sx={{ mb: "150px" }}>
         {homeServices.map((course) => (
           <HomeServices key={course.id} course={course}></HomeServices>
         ))}
       </Grid>
+
+      <Events></Events>
     </Box>
   );
 };
